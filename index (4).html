@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Williamimex — Coming Soon</title>
+<meta name="description" content="Williamimex — Import & Export | Shipping & Logistics between China, Germany, Lebanon & Syria" />
+<link href="https://fonts.googleapis.com/css2?cairo=Poppins:wght@300;400;600;700;800&circlearrowleft;=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --gold:#f7bd00fe;
+  --muted:#cfcfcf;
+  --dark:#050505;
+  --glass: rgba(255,255,255,0.03);
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:var(--dark);font-family:"Cairo","Poppins",sans-serif;color:#fff}
+body::before{
+  content:"";
+  position:fixed;inset:0;
+  background: center/cover no-repeat url('background.jpg');
+  filter:brightness(.26) contrast(.98);
+  z-index:0;
+}
+/* Layout */
+.wrap{position:relative;z-index:1;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px}
+.card{width:100%;max-width:1250px;background:linear-gradient(180deg, rgba(0,0,0,0.20), rgba(0,0,0,0.36));border-radius:14px;padding:36px;border:1px solid rgba(212,175,55,0.06);box-shadow:0 30px 80px rgba(0,0,0,0.6);display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+.header{display:flex;gap:16px;align-items:center}
+.logo-box{width:110px;height:110px;border-radius:12px;background:linear-gradient(135deg, rgba(212,175,55,0.06), rgba(212,175,55,0.02));display:flex;align-items:center;justify-content:center;border:1px solid rgba(212,175,55,0.06)}
+.logo-box img{max-width:85%;height:auto;filter:brightness(1.02)}
+.title{font-size:48px;color:var(--gold);font-weight:800;letter-spacing:1px;margin:0;text-transform:uppercase;text-shadow:0 8px 24px rgba(0,0,0,0.6)}
+.tag{font-weight:700;color:#f0bc11;font-size:15px;}
+/* Coming big */
+.coming{margin-top:18px;font-size:36px;color:var(--gold);font-weight:700;text-shadow:0 6px 18px rgba(212,175,55,0.18)}
+
+/* Description */
+.desc{margin-top:14px;color:#eaeaea;line-height:1.75;font-size:16px;max-width:820px}
+
+/* Visual center globe */
+.visual-wrap{display:flex;flex-direction:column;align-items:center;gap:16px;margin-top:18px}
+.globe{width:360px;height:360px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 35% 25%, rgba(212,175,55,0.08), rgba(0,0,0,0.22));border:1px solid rgba(212,175,55,0.06);box-shadow:0 30px 80px rgba(0,0,0,0.6);overflow:hidden;position:relative}
+.globe img{width:68%;filter:drop-shadow(0 12px 30px rgba(0,0,0,0.6));}
+
+/* Animated plane & truck */
+.plane{position:absolute;top:-10%;left:-20%;width:220px;animation:fly 12s linear infinite;z-index:5;opacity:0.98}
+@keyframes fly{0%{transform:translateX(-40vw) rotate(-8deg)}50%{transform:translateX(60vw) rotate(-2deg)}100%{transform:translateX(140vw) rotate(-8deg)}}
+.truck{position:absolute;bottom:-6%;right:-25%;width:320px;animation:drive 18s linear infinite;z-index:5;opacity:0.98}
+@keyframes drive{0%{transform:translateX(0)}50%{transform:translateX(-70vw)}100%{transform:translateX(0)}}
+
+/* Right column */
+.side{background:linear-gradient(180deg, rgba(0,0,0,0.12), rgba(0,0,0,0.02));padding:20px;border-radius:10px;border:1px solid rgba(212,175,55,0.04)}
+.side h3{margin:0;color:var(--gold);font-size:20px}
+.contact p{margin:10px 0;color:#e7e7e7;font-size:15px}
+.contact a{color:var(--gold);text-decoration:none;font-weight:700}
+.services{margin-top:12px;background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;color:#ddd}
+
+/* CTA buttons */
+.btns{display:flex;flex-direction:column;gap:10px;margin-top:16px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 14px;border-radius:10px;background:linear-gradient(90deg,#0d0d0d,#111);border:1px solid rgba(212,175,55,0.14);color:#fff;text-decoration:none;font-weight:700}
+.btn.whatsapp{background:linear-gradient(90deg,#0e4b12,#128c7e);border:0}
+
+/* Countdown small */
+.countdown{display:flex;gap:8px;margin-top:14px;align-items:center;direction:ltr;justify-content:center}
+.box{background:rgba(0,0,0,0.45);padding:10px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.02);min-width:62px;text-align:center}
+.num{font-weight:800;color:var(--gold);font-size:18px}
+.lbl{font-size:11px;color:#ddd;margin-top:4px}
+
+/* Footer */
+.footer{grid-column:1/-1;margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
+
+/* responsive */
+@media(max-width:980px){
+  .card{grid-template-columns:1fr;padding:22px}
+  .title{font-size:34px}
+  .coming{font-size:26px}
+  .globe{width:260px;height:260px}
+  .plane,.truck{display:none}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="card" role="main" aria-labelledby="main-title">
+    <div>
+      <div class="header">
+        <img src="hero.jpg" alt="logo" style="width:120px; height:auto;">
+        <div>
+          <h1 id="main-title">Williamimex</h1>
+          <div class="tag">Travel _ Import &  Export </div>
+        </div>
+      </div>
+
+      <div class="coming">🚀 Coming Soon</div>
+
+      <p class="desc">
+        <strong>       نحن نعمل الآن على إطلاق الموقع الرسمي لشركتنا  خدمات متكاملة لسفر
+       استيراد - تصدير والشحن بين الصين</stوrong> — <strong>ألمانيا</strong> — <strong>لبنان</strong> — <strong>سوريا</strong>.<br>
+        نقدم: شحن جوي وبحري وبري، التخليص الجمركي، التوصيل الداخلي، وتنظيم شحنات كاملة من المورد حتى المستلم.
+      </p>
+      
+            <div class="visual-wrap" aria-hidden="true">
+        <div class="globe" role="img" aria-label="Globe">
+         <img src="rrr.jpg" alt="" style="width: 325px;; height:auto">
+        </div>
+        <!-- animated plane (simple SVG) -->
+        <div class="plane" aria-hidden="true">
+          <svg viewBox="0 0 512 120" width="220" height="60" xmlns="http://www.w3.org/2000/svg" fill="none">
+            <path d="M6 60 L120 38 L200 28 L360 24 L420 18 L480 6 L420 20 L300 46 L120 74 Z" fill="#d4af37" opacity="0.95"/>
+          </svg>
+        </div>
+
+        <!-- animated truck -->
+        <div class="truck" aria-hidden="true">
+          <svg viewBox="0 0 640 160" width="320" height="90" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="30" width="420" height="70" rx="6" fill="#111" stroke="#d4af37" stroke-opacity="0.18"/>
+            <rect x="420" y="50" width="160" height="50" rx="6" fill="#111" stroke="#d4af37" stroke-opacity="0.16"/>
+            <circle cx="120" cy="110" r="16" fill="#222" stroke="#d4af37"/>
+            <circle cx="480" cy="110" r="16" fill="#222" stroke="#d4af37"/>
+          </svg>
+        </div>
+
+
+        <!-- countdown boxes -->
+        <div class="countdown" aria-hidden="true" style="margin-top:12px">
+          <div class="box"><div class="num" id="days">00</div><div class="lbl">Days</div></div>
+          <div class="box"><div class="num" id="hours">00</div><div class="lbl">Hours</div></div>
+          <div class="box"><div class="num" id="minutes">00</div><div class="lbl">Minutes</div></div>
+          <div class="box"><div class="num" id="seconds">00</div><div class="lbl">Seconds</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- right column -->
+    <aside class="side" aria-label="Contact and Services">
+      <h3>تواصل / Contact</h3>
+
+      <div class="contact">
+        <p>📍 <strong>Lebanon 🇱🇧</strong> | <strong>Germany 🇩🇪</strong></p>
+        <p>📞 Lebanon: <a href="tel:+96181858968">+961 81858968</a></p>
+        <p>📞 Germany: <a href="tel:+4915511334369">+49 15511334369</a></p>
+        <p>✉️ Email: <a href="mailto:williamimex@outlook.com">williamimex@outlook.com</a></p>
+        <p>📧 Gmail: <a href="mailto:imexwilliam@gmail.com">imexwilliam@gmail.com</a></p>
+        <p>🌐 Website: <a href="https://williamimex.com" target="_blank" rel="noopener">williamimex.com</a></p>
+
+        <div class="btns">
+          <a class="btn whatsapp " href="https://wa.me/+4915511334369" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" style="filter:drop-shadow(0 4px 10px rgba(0,0,0,0.4));"><path fill="#fff" d="M20.5 3.5C18.5 1.5 15.8 .5 12.9 1 10 1.5 7.8 3.4 6.9 6.1 6.1 8.8 6.7 11.6 8.6 13.7L7 18.5 11.7 17.1C13.9 18.4 16.4 18.6 18.7 17.4c3.2-1.6 4.9-5.4 4-9C22 6.6 21 5 20.5 3.5z"/></svg>
+             🇩🇪 whatsapp
+          </a>
+          <a class="btn" href="tel:+96181858968">
+            <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#d4af37" d="M6.6 10.7c1.1 2.2 2.9 4 5 5l2.2-2.2c.2-.2.5-.3.8-.2.9.3 2 .5 3 .5.2 0 .4 0 .6 0 .3 0 .6.2.8.5l1 1.5c.2.3.1.7-.2.9C17 22 12.3 24 7.7 22 4.3 20.6 1.9 17.9 1 14.6.2 9 3.8 5 8.6 3.4c.4-.1.8 0 1.1.3l1.5 1.7c.3.4.2.8-.1 1.2L10 8.2c-.3.5-.2 1 .3 1.3z"/></svg>
+             🇱🇧 call now
+          </a>
+          <a class="btn" href="mailto:williamimex@outlook.com">✉️  inbox</a>
+        </div>
+
+        <div class="services" aria-label="services">
+          <strong style="color:var(--gold)">خدماتنا / Our Services</strong>
+          <ul style="margin:8px 0 0 16px;padding:0;color:#ddd;line-height:1.6">
+            <li>🔸خدمة سفر متكاملة: تذاكر، إقامات، حجز فنادق بأســعار منافسة</li>
+            <li>🔸 شحن جوي وبحري وبري  Air / Sea / Road</li>
+            <li>🔸 التخليص الجمركي والوثائق</li>
+            <li>🔸 استيراد من الصين / موردين موثوقين</li>
+            <li>🔸 لوجستيات داخل /لبنان /سوريا /الصين / أوروبا</li>
+          </ul>
+        </div>
+
+        <div style="margin-top:12px;color:var(--muted);font-size:13px">
+          <strong>Trust & Security</strong>
+          <p style="margin:8px 0 0;color:#ddd">عملياتنا عبر شركاء موثوقين وسياسات حماية للوثائق — شحناتك بأمان وبخصوصية تامة.</p>
+        </div>
+      </div>
+    </aside>
+
+    <div class="footer">©️ <span id="yr"></span> William Imex — All rights reserved.</div>
+  </div>
+</div>
+
+<script>
+// set year
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// countdown (tweak target date here)
+const target = new Date(); target.setDate(target.getDate()+14); target.setHours(12,0,0,0);
+function fmt(n){return String(n).padStart(2,'0')}
+function upd(){
+  const now=new Date(); let diff=Math.max(0,target-now);
+  const d=Math.floor(diff/(1000*60*60*24)); diff-=d*86400000;
+  const h=Math.floor(diff/(1000*60*60)); diff-=h*3600000;
+  const m=Math.floor(diff/(1000*60)); diff-=m*60000;
+  const s=Math.floor(diff/1000);
+  const ids=['days','hours','minutes','seconds'];
+  const vals=[d,h,m,s];
+  // if countdown boxes exist, create / update them
+  if(document.getElementById('days')){
+    document.getElementById('days').textContent=fmt(vals[0]);
+    document.getElementById('hours').textContent=fmt(vals[1]);
+    document.getElementById('minutes').textContent=fmt(vals[2]);
+    document.getElementById('seconds').textContent=fmt(vals[3]);
+  }
+}
+setInterval(upd,1000); upd();
+</script>
+</body>
+</html>
